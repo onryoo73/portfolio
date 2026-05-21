@@ -4,22 +4,40 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    title: 'Zenith 3D Studio',
+    category: 'Interactive / 3D',
+    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800',
+    tags: ['React Three Fiber', 'Three.js', 'GLSL'],
+  },
+  {
+    title: 'Velocity Dashboard',
+    category: 'SaaS / Fintech',
+    image: 'https://images.unsplash.com/photo-1551288049-bbda4865cda1?auto=format&fit=crop&q=80&w=800',
+    tags: ['Next.js', 'D3.js', 'TypeScript'],
+  },
+  {
     title: 'Nexus AI Platform',
-    category: 'SaaS / AI',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800',
-    tags: ['Next.js', 'OpenAI', 'Tailwind'],
+    category: 'AI / Machine Learning',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
+    tags: ['OpenAI', 'Python', 'React'],
   },
   {
-    title: 'Crypto Dashboard',
-    category: 'Fintech',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800',
-    tags: ['React', 'D3.js', 'Ethers.js'],
+    title: 'Pulse Messenger',
+    category: 'Communication',
+    image: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&q=80&w=800',
+    tags: ['Socket.io', 'Node.js', 'Redis'],
   },
   {
-    title: 'Luxe E-commerce',
-    category: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&q=80&w=800',
-    tags: ['Shopify', 'React', 'GSAP'],
+    title: 'EtherFlow Web3',
+    category: 'Blockchain',
+    image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=800',
+    tags: ['Solidity', 'Ethers.js', 'Web3'],
+  },
+  {
+    title: 'Aura E-commerce',
+    category: 'Retail / Lifestyle',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800',
+    tags: ['Stripe', 'Headless CMS', 'GSAP'],
   },
 ];
 
