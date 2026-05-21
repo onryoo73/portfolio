@@ -4,16 +4,18 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    title: 'Velocity Dashboard',
+    category: 'SaaS / Fintech',
+    image: '/velocity-dashboard.png',
+    tags: ['Next.js', 'D3.js', 'TypeScript', 'Tailwind'],
+    link: 'https://velocity-dashboard-zeta.vercel.app/dashboard',
+    github: 'https://github.com/onryoo73/velocity-dashboard',
+  },
+  {
     title: 'Zenith 3D Studio',
     category: 'Interactive / 3D',
     image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800',
     tags: ['React Three Fiber', 'Three.js', 'GLSL'],
-  },
-  {
-    title: 'Velocity Dashboard',
-    category: 'SaaS / Fintech',
-    image: 'https://images.unsplash.com/photo-1551288049-bbda4865cda1?auto=format&fit=crop&q=80&w=800',
-    tags: ['Next.js', 'D3.js', 'TypeScript'],
   },
   {
     title: 'Nexus AI Platform',
@@ -76,12 +78,26 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                   <div className="flex gap-4">
-                    <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black hover:bg-primary hover:text-white transition-colors">
-                      <ExternalLink size={20} />
-                    </button>
-                    <button className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors">
-                      <Github size={20} />
-                    </button>
+                    {project.link && (
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black hover:bg-primary hover:text-white transition-colors"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+                    {project.github && (
+                      <a 
+                        href={project.github} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors"
+                      >
+                        <Github size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
