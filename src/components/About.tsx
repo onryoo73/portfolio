@@ -36,11 +36,14 @@ const About = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-              className="relative z-10 rounded-[3rem] overflow-hidden border border-white/10"
+              className="relative z-10 rounded-[3rem] overflow-hidden border border-white/10 group"
             >
-              <div className="aspect-[4/5] bg-gradient-to-br from-white/10 to-primary/20 flex items-center justify-center">
-                 <span className="text-8xl font-bold text-white/10">Fares</span>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=800" 
+                alt="Digital Art" 
+                className="w-full h-full object-cover aspect-[4/5] transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
             {/* Decorative elements */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 blur-[80px] rounded-full" />

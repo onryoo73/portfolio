@@ -74,9 +74,13 @@ const Hero = () => {
 
         {/* Right Content - 3D Avatar Image */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          initial={{ opacity: 0, y: 150 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ 
+            duration: 1.5, 
+            ease: [0.16, 1, 0.3, 1],
+            delay: 0.4 
+          }}
           className="relative hidden lg:block"
         >
           <div className="relative z-10 w-full aspect-square">
