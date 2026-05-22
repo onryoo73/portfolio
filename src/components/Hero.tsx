@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import ThreeScene from './ThreeScene';
 import { ArrowRight, MessageSquare } from 'lucide-react';

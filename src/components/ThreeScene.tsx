@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+import { useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Sphere, MeshDistortMaterial, PerspectiveCamera, Environment, ContactShadows } from '@react-three/drei';
 import * as THREE from 'three';
@@ -16,7 +16,7 @@ const FloatingParticles = ({ count = 50 }) => {
 
   const ref = useRef<THREE.Points>(null);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (!ref.current) return;
     ref.current.rotation.y += 0.001;
     ref.current.rotation.x += 0.0005;
@@ -27,9 +27,7 @@ const FloatingParticles = ({ count = 50 }) => {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          count={points.length / 3}
-          array={points}
-          itemSize={3}
+          args={[points, 3]}
         />
       </bufferGeometry>
       <pointsMaterial size={0.05} color="#FF6B00" transparent opacity={0.6} sizeAttenuation />
