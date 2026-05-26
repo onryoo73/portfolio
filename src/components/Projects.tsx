@@ -27,10 +27,12 @@ const projects = [
     github: 'https://github.com/onryoo73/Ghorba-Express',
   },
   {
-    title: 'Pulse Messenger',
-    category: 'Communication',
-    image: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&q=80&w=800',
-    tags: ['Socket.io', 'Node.js', 'Redis'],
+    title: 'SentinelFi',
+    category: 'Crytpo / DeFi / Web3',
+    image: 'Screenshot From 2026-05-26 22-10-51.png',
+    tags: ['Solidity', 'Node.js', 'tailwindcss', 'Ethers.js'],
+    link: 'https://sentinel-fi-kohl.vercel.app/',
+    github: 'https://github.com/onryoo73/SentinelFi',
   },
   {
     title: 'EtherFlow Web3',
