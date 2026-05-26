@@ -11,10 +11,12 @@ const projects = [
     github: 'https://github.com/onryoo73/velocity-dashboard',
   },
   {
-    title: 'Zenith 3D Studio',
-    category: 'Interactive / 3D',
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800',
-    tags: ['React Three Fiber', 'Three.js', 'GLSL'],
+    title: 'DocTN',
+    category: 'Multipage Business Website',
+    image: '/Screenshot From 2026-05-26 18-59-22.png',
+    tags: ['Next.js', 'TailwindCSS', 'MongoDB', 'Express', 'TypeScript'],
+    link: 'https://visa-tn.vercel.app/',
+    github: 'https://github.com/onryoo73/Doc-TN',
   },
   {
     title: 'Nexus AI Platform',
@@ -72,17 +74,17 @@ const Projects = () => {
               className="group relative"
             >
               <div className="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden mb-6 border border-white/10">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                   <div className="flex gap-4">
                     {project.link && (
-                      <a 
-                        href={project.link} 
-                        target="_blank" 
+                      <a
+                        href={project.link}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black hover:bg-primary hover:text-white transition-colors"
                       >
@@ -90,9 +92,9 @@ const Projects = () => {
                       </a>
                     )}
                     {project.github && (
-                      <a 
-                        href={project.github} 
-                        target="_blank" 
+                      <a
+                        href={project.github}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors"
                       >
