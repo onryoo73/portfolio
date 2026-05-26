@@ -39,6 +39,8 @@ const projects = [
     category: 'Retail / Lifestyle',
     image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800',
     tags: ['Stripe', 'Headless CMS', 'GSAP'],
+    link: 'https://aura-brand-nine.vercel.app/',
+    github: 'https://github.com/onryoo73/aura-brand',
   },
 ];
 
