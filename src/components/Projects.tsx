@@ -19,10 +19,12 @@ const projects = [
     github: 'https://github.com/onryoo73/Doc-TN',
   },
   {
-    title: 'Nexus AI Platform',
-    category: 'AI / Machine Learning',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
-    tags: ['OpenAI', 'Python', 'React'],
+    title: 'Full-Stack SaaS Platform',
+    category: 'P2P / marketplace',
+    image: '/Screenshot From 2026-05-26 19-19-22.png',
+    tags: ['TypeScript', 'Next.js 14', 'Tailwind CSS'],
+    link: 'https://ghorba-express.vercel.app/',
+    github: 'https://github.com/onryoo73/Ghorba-Express',
   },
   {
     title: 'Pulse Messenger',
