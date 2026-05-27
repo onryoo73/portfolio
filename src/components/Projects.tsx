@@ -34,11 +34,12 @@ const projects = [
     link: 'https://sentinel-fi-kohl.vercel.app/',
     github: 'https://github.com/onryoo73/SentinelFi',
   },
+
   {
-    title: 'EtherFlow Web3',
-    category: 'Blockchain',
-    image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=800',
-    tags: ['Solidity', 'Ethers.js', 'Web3'],
+    title: 'Codespy',
+    category: 'AI / Developer Tool',
+    image: 'Screenshot From 2026-05-27 20-55-07.png',
+    tags: ['Next.js', 'TypeScript', 'AI', 'Tailwind'],
   },
   {
     title: 'Aura E-commerce',
