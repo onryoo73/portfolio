@@ -40,6 +40,8 @@ const projects = [
     category: 'AI / Developer Tool',
     image: 'Screenshot From 2026-05-27 20-55-07.png',
     tags: ['Next.js', 'TypeScript', 'AI', 'Tailwind'],
+    link: 'https://codespy-sooty.vercel.app/',
+    github: 'https://github.com/onryoo73/Codespy',
   },
   {
     title: 'Aura E-commerce',
